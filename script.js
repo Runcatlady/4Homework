@@ -15,9 +15,26 @@ const responseDiv = document.querySelector("#response");
 const endPageEl = document.querySelector(".end-page");
 const initialAndScore = document.querySelector("#staticEmail");
 
+// set time to complete the quiz 90 seconds
+let timer = 90;
+let timeLeft;
+//Timer function at run as soon as the start button is clicked
+function setTimer() {
+    timeLeft = setInterval(function() {
+        timer--;
+
+        let resetTime = timeElement.textContent = "Time:" + " " + timer;
+        timer = timer;
+
+        if (timer <= 0) {
+            clearInterval(timeLeft);
+        } 
+
+    }, 1000)
+
+}
 
 // Created questions and put them in an array
-
 const questions = [
     {
         title: "Which is considered a function",
