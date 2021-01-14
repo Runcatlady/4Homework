@@ -93,7 +93,7 @@ var finalScore = document.querySelector("#result");
 var initialInput = document.querySelector("#inputInitial").value;
 var submitEl = document.querySelector(".btn btn-success mb-2");
 var finalPageEl = document.querySelector(".final-page");
-var initialsScore = document.querySelector("#staticEmail");
+var initialsScore = document.querySelector("#yourText");
 
 var questions = [
     {

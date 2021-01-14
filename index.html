@@ -43,7 +43,7 @@
         <h3 id="title">
 
         </h3>
-        <ol id="q-list">
+        <ol id="questLlist">
 
 
         </ol>
@@ -59,7 +59,7 @@
             <h3>Finished!</h3>
 
             <p id="result"> </p>
-            <p id="errorSmg"></p>
+            <p id="error"></p>
 
             <form class="form-inline">
                 <div class="form-group mb-2">
@@ -71,6 +71,27 @@
             </form>
 
         </div>
+        <!-- This is the final page section that displays the user's high score and they can clear their score and/or go back to the start -->
+        <div class="final-page">
+            <h2>High Score</h2>
+
+            <div class="col-sm-10">
+                <input type="text" readonly class="form-control-plaintext" id="yourText" value="1.">
+
+            </div>
+            <button class="myBtn" onclick="init()">Go Back</button>
+            <button class="myBtn" onclick="clearScore()">Clear High Score</button>
+
+
+        </div>
+
+
+        <script src="script.js"></script>
+       
+</body>
+
+</html>
+
 
 
     
