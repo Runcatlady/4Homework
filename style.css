@@ -8,16 +8,53 @@ h2 {
     text-align: center;
 }
 
-h5 {
+h3 {
     font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: left;
+   margin-left: 100px;
+
+}
+
+h5 {
+    font-size: 20px;
     font-family: monospace;
-    text-align: center;
+    text-align: left;
     margin-left: 5%;
 
 }
 
+p {
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: serif;
+}
+
 .intro {
-    margin-right: 400px;
-    margin-top: 100px;
+    margin: 0 auto;
+    margin-top: 75px;
+    width: 800px;
     padding-left: 70px;
+}
+#start {
+    margin: 0 auto;
+   font-size: 25px; 
+   width: 100px;
+   margin-top: 25px;
+   text-align: center;
+  
+}
+
+.btn btn-success {
+   margin-right: 300px;
+}
+
+.btn btn-success mb-2 {
+    margin-right: 300px; 
+}
+
+.finished {
+    margin: 0 auto; 
+    width: 500px; 
+    visibility: hidden;
 }
