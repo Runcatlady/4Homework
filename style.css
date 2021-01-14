@@ -1,0 +1,23 @@
+body {
+    margin: auto;
+}
+
+h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 45px;
+    text-align: center;
+}
+
+h5 {
+    font-size: 30px;
+    font-family: monospace;
+    text-align: center;
+    margin-left: 5%;
+
+}
+
+.intro {
+    margin-right: 400px;
+    margin-top: 100px;
+    padding-left: 70px;
+}

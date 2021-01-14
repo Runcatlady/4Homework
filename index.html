@@ -1,99 +1,43 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Quiz</title>
-    <!-- <link rel="stylesheet" href="../assets/css/reset.css"> -->
+    <title>Document</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
 
-    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-  
-
-    <div class="start-page">
-        <!-- This will contain the form for questions to be displayed and answered-->
-        <div class="row header">
+    <div class="main-page">
+        
+        <div class="row">
             <div class="col-md-10 col-sm-6">
+            
             </div>
-            <div class="col-md-2 col-sm-6">
-                <h5 id="time">Time: 0 </h5>
+            <div class="col-md-3 col-sm-4">
+                <h5 id="time">Time Left: 0 </h5>
             </div>
 
         </div>
+    </div>
 
-        <br><br>
-
-        <div class="wrapper">
-            <div class=" row ">
-                <div class="col-md-10 col-sm-6">
-                    <h2>Code Quiz</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-10 col-sm-6">
-                    <p>Rules for the quiz: You have 90 seconds to answer the following questions. Once you click start you must continue till the very end. Your score will be your time remaining. You will lose 10 seconds for every incorrect answer. Have fun!</p>
-
-                    <button id="start" class="btn btn-primary btn-lg">Start Quiz</button>
-                </div>
+    <div class="intro">
+        <div class="row">
+            <div class="col-md-6 col-sm-2">
+                <h2>Code Quiz</h2>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-10 col-sm-6">
+                <p>Hello and welcome to the Code Quiz. Rules for the quiz: You have 90 seconds to answer the following questions. Once you click start you must continue till the very end. Your score will be your time remaining. Oh, and you will lose 10 seconds for every incorrect answer. Have fun!</p>
 
-
-        <!---This is begening of the  div that will contain all the questions  -->
-        <div class="divContainer">
-
-            <!---This is begening of the first div that will display each questions -->
-
-            <h3 id="title">
-
-            </h3>
-            <ol id="questList">
-            </ol>
-
-        </div>
-        <br>
-        <div id="response"> </div>
-
-        <div class="finish">
-            <h3>Finished!</h3>
-
-            <p id="result"> </p>
-            <p id="error"></p>
-
-            <form class="form-inline">
-                <div class="form-group mb-2">
-                    <h5 id="staticMsg">Enter your initials </h5>
-                </div>
-                <div class="form-group mx-sm-3 mb-2">
-                    <input type="text" class="form-control" id="inputInitial" placeholder="here"> </div>
-                <button type="submit" class="btn btn-primary mb-2">Submit</button>
-            </form>
-
-        </div>
-        <div class="end-page">
-            <h2>High Score</h2>
-
-            <div class="col-sm-10">
-                <input type="text" readonly class="form-control-plaintext" id="staticMsg" value="1.">
-
+                <button id="start" class="btn btn-primary btn-lg">Start</button>
             </div>
-            <button class="myBtn" onclick="init()">Go Back</button>
-            <button class="myBtn" onclick="clearScore()">Clear High Score</button>
-
-
         </div>
+    </div>
 
-
-        <script src="script.js"></script>
-       
+    
 </body>
-
 </html>
